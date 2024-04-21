@@ -1,4 +1,4 @@
-import { Home } from "lucide-react";
+import { Compass, Download, FolderClosed, Heart, Home, ListMusic } from "lucide-react";
 
 export const routes = [
   { 
@@ -12,12 +12,12 @@ export const routes = [
         },
         {
             id:2,
-            icon:Home,
+            icon:Compass,
             name:"Discover"
         },
         {
             id:3,
-            icon:Home,
+            icon:ListMusic,
             name:"Collections"
         },
     ]
@@ -28,17 +28,17 @@ export const routes = [
     route:[
         {
             id:1,
-            icon:Home,
+            icon:Download,
             name:"Download"
         },
         {
             id:2,
-            icon:Home,
+            icon:Heart,
             name:"Favourites"
         },
         {
             id:3,
-            icon:Home,
+            icon:FolderClosed,
             name:"Local Files"
         },
     ]

@@ -1,22 +1,22 @@
+import MainSection from "@/component/core/MainSection";
+import RightSIdebar from "@/component/core/RightSIdebar";
 import Sidebar from "@/component/core/Sidebar";
-import { routes } from "@/data/sidebar";
-import { MenuIcon } from "lucide-react";
-import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="min-h-screen overflow-hidden">
+    <div className="min-h-screen flex overflow-hidden">
 
       {/* sdebar  */}
-      <div className='w-[300px] border h-full'>
+      <div className='w-[380px]  h-full'>
           <Sidebar/>
       </div>
 
-        <div className='w-full border'>
-
+        <div className='w-full '>
+          <MainSection/>
         </div>
-        <div className='w-[400px] border'>
 
+        <div className='w-[450px]'>
+        <RightSIdebar/>
         </div>
       </div>
       );
