@@ -41,18 +41,18 @@ const MainSection = () => {
             <div className='flex flex-col'>
                 <div className='flex justify-between items-center mt-5'>
                     <p className='text-2xl font-bold'>Hello Woilon</p>
-                    <p className='text-sm text-slate-300'>See all</p>
+                    <p className='text-sm text-slate-300 '>See all</p>
                 </div>
-                <div className='grid lg:grid-cols-4 gap-5 mt-2 items-center justify-center'>
+                <div className='grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 mt-3 items-center justify-center'>
                     {
                         TopHits.map((list) => (
-                            <div key={list.id} className='flex flex-col justify-center items-center'>
-                                <div className='rounded-md'>
-                                    <Image src={list.img} alt="playlist" width={100} height={100} className='h-[180px] w-[180px] rounded-md object-cover' />
+                            <div key={list.id} className='flex flex-col items-center'>
+                                <div className='rounded-md  w-full'>
+                                    <Image quality={100} src={list.img} alt="playlist" width={100} height={100} className='h-[200px] w-[240px] rounded-md object-cover'/>
                                 </div>
-                                <div className=' w-full capitalize px-5'>
-                                    <p className='font-semibold'>{list.title}</p>
-                                    <p className='text-sm text-slate-300'>{list.artist}</p>
+                                <div className='w-full capitalize mt-2'>
+                                    <p className='font-semibold text-sm'>{list.title}</p>
+                                    <p className='text-xs text-slate-300'>{list.artist}</p>
                                 </div>
                             </div>
                         ))
@@ -62,19 +62,19 @@ const MainSection = () => {
 
             <div className='flex flex-col'>
                 <div className='flex justify-between items-center mt-5'>
-                    <p className='text-2xl font-bold'>Hello Woilon</p>
-                    <p className='text-sm text-slate-300'>See all</p>
+                    <p className='text-2xl font-bold'>New Releases for you</p>
+                    <p className='text-sm text-slate-300 '>See all</p>
                 </div>
-                <div className='grid lg:grid-cols-4 gap-5 mt-2 items-center justify-center'>
+                <div className='grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 mt-2 items-center justify-center'>
                     {
                         TopHits.map((list) => (
-                            <div key={list.id} className='flex flex-col justify-center items-center'>
-                                <div className='rounded-md'>
-                                    <Image src={list.img} alt="playlist" width={100} height={100} className='h-[180px] w-[180px] rounded-md object-cover' />
+                            <div key={list.id} className='flex flex-col items-center'>
+                                <div className='rounded-md  w-full'>
+                                    <Image quality={100} src={list.img} alt="playlist" width={100} height={100} className='h-[200px] w-[240px] rounded-md object-cover'/>
                                 </div>
-                                <div className=' w-full capitalize px-5'>
-                                    <p className='font-semibold'>{list.title}</p>
-                                    <p className='text-sm text-slate-300'>{list.artist}</p>
+                                <div className='w-full capitalize mt-2'>
+                                    <p className='font-semibold text-sm'>{list.title}</p>
+                                    <p className='text-xs text-slate-300'>{list.artist}</p>
                                 </div>
                             </div>
                         ))

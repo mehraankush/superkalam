@@ -6,18 +6,20 @@ export default function Home() {
   return (
     <div className="min-h-screen flex overflow-hidden">
 
-      {/* sdebar  */}
-      <div className='w-[380px]  h-full'>
-          <Sidebar/>
+      {/* Sidebar  */}
+      <div className='hidden md:block w-[380px]  h-full'>
+        <Sidebar />
       </div>
 
-        <div className='w-full '>
-          <MainSection/>
-        </div>
-
-        <div className='w-[450px]'>
-        <RightSIdebar/>
-        </div>
+      {/* main section  */}
+      <div className='w-full '>
+        <MainSection />
       </div>
-      );
+
+     {/* RigtSideBar  */}
+      <div className='hidden md:block lg:w-[450px]'>
+        <RightSIdebar />
+      </div>
+    </div>
+  );
 }
