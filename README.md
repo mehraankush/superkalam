@@ -7,9 +7,7 @@ This project is a front-end implementation of a music streaming web application 
 
 [Live Demo](https://superkalam.vercel.app/) <!-- Add a link to your deployed site here -->
 
-![Preview](screenshot.png) <!-- Add a screenshot or gif of your application -->
-
-## Features
+![Preview](https://github.com/mehraankush/superkalam/blob/main/public/ss.png) 
 
 - Responsive layout following the design reference
 - Basic animations for enhanced user experience
