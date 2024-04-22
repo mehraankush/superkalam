@@ -45,7 +45,7 @@ const MainSection = () => {
                 </div>
             </div>
 
-            <div className="bg-[url('/back.jpg')]  text-white h-[280px] mt-5 bg-no-repeat bg-cover bg-center rounded-xl ">
+            <div className="bg-[url('/back.jpg')]   text-white h-[280px] mt-5 bg-no-repeat bg-cover bg-center rounded-xl ">
 
                 <div className='flex justify-start h-full p-5 '>
                     <div className='h-full p-5 space-y-2'>
@@ -62,11 +62,15 @@ const MainSection = () => {
                 </div>
             </div>
 
-            <div>
-                <TrendingSections TopHits={TopHits} title="Hello Woilon" />
-            </div>
-            <div>
-                <TrendingSections TopHits={NewRelease} title="New Releases for you" />
+            <div className='flex justify-center'>
+                <div className='max-w-[1200px]'>
+                    <div>
+                        <TrendingSections TopHits={TopHits} title="Hello Woilon" />
+                    </div>
+                    <div>
+                        <TrendingSections TopHits={NewRelease} title="New Releases for you" />
+                    </div>
+                </div>
             </div>
 
         </div>

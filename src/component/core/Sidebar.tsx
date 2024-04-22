@@ -29,7 +29,7 @@ const Sidebar = () => {
                                 <div className='ml-2 space-y-3'>
                                     {
                                         route.route.map((route) => (
-                                            <div key={route.id} className='flex gap-3 items-center cursor-pointer text-sm text-slate-300'>
+                                            <div key={route.id} className={` ${route.name === "home" ? '' : ''} flex gap-3 items-center cursor-pointer text-sm text-slate-300`}>
                                                 <route.icon className='h-5 w-5' />
                                                 <p className='font-medium'>{route.name}</p>
                                             </div>
@@ -41,8 +41,10 @@ const Sidebar = () => {
                     }
                 </div>
 
+                <div className='text-white capitalize mt-2 md:mt-[15rem] px-5 cursor-pointer'>
+                    <p className=' text-center p-2 bg-orange-600 rounded '>try premium</p>
+                </div>
             </div>
-
 
         </div>
     )
