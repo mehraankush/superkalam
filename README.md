@@ -1,4 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+# Music Streaming Web App
+
+This project is a front-end implementation of a music streaming web application based on a design reference from Dribbble. The goal is to recreate the design, implement basic animations, and ensure responsiveness using Next.js and Tailwind CSS.
+
+## Preview
+
+[Live Demo](https://superkalam.vercel.app/) <!-- Add a link to your deployed site here -->
+
+![Preview](screenshot.png) <!-- Add a screenshot or gif of your application -->
+
+## Features
+
+- Responsive layout following the design reference
+- Basic animations for enhanced user experience
+- Utilizes Tailwind CSS for styling and layout
+- Built with Next.js for server-side rendering and routing
+
+## Technologies Used
+
+- **Next.js**: React framework for building server-side rendered applications.
+- **Tailwind CSS**: Utility-first CSS framework used for styling.
+- **React Hooks**: Used for state management and component lifecycle.
+- **Zustend**: For State management.
+
+## Getting Started
+
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+Make sure you have Node.js and npm (or yarn) installed on your machine.
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/music-streaming-web-app.git
 
 ## Getting Started
 
