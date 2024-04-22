@@ -4,9 +4,12 @@ import { ChevronLeft, ChevronRight, Ellipsis, Menu, Search } from 'lucide-react'
 import React from 'react'
 import TrendingSections from '../common/TrendingSections'
 import useBooleanStore from '@/store/toggle'
+import useTogglePlaylisytStore from '@/store/togglePlaylist'
 
 const MainSection = () => {
     const { value, setValue } = useBooleanStore();
+    const { toggle, setToggle } = useTogglePlaylisytStore();
+
     return (
         <div className='flex pb-[100px] flex-col overflow-y-scroll h-screen text-white px-7 bg-[#18191B]'>
 
@@ -26,16 +29,18 @@ const MainSection = () => {
                         <Menu />
                     </div>
 
-                    <div className='flex'>
+                    <div className='hidden md:flex'>
                         <ChevronLeft />
                         <ChevronRight />
                     </div>
                 </div>
+
                 <div className='w-[600px] bg-white text-black rounded-full p-1 flex'>
                     <Search className='mt-1 ml-2 text-slate-500' />
                     <input type='text' placeholder='Search' className='border-none outline-none rounded-full p-1 w-full' />
                 </div>
-                <div>
+
+                <div className='cursor-pointer' onClick={() => setToggle(!toggle)}>
                     <Ellipsis />
                 </div>
             </div>
