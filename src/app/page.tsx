@@ -1,4 +1,5 @@
 import MainSection from "@/component/core/MainSection";
+import MucisPlayer from "@/component/core/MucisPlayer";
 import RightSIdebar from "@/component/core/RightSIdebar";
 import Sidebar from "@/component/core/Sidebar";
 
@@ -7,7 +8,7 @@ export default function Home() {
     <div className="min-h-screen flex overflow-hidden">
 
       {/* Sidebar  */}
-      <div className='hidden md:block w-[380px]  h-full'>
+      <div>
         <Sidebar />
       </div>
 
@@ -17,8 +18,12 @@ export default function Home() {
       </div>
 
      {/* RigtSideBar  */}
-      <div className='hidden md:block lg:w-[450px]'>
+      <div >
         <RightSIdebar />
+      </div>
+
+      <div className="bg-[#0A0A0B] w-screen  absolute z-[10] bottom-0 h-[80px]">
+        <MucisPlayer/>
       </div>
     </div>
   );

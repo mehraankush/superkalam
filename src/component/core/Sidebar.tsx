@@ -1,21 +1,23 @@
 "use client"
 // import { routes } from '@/data/sidebar'
 import { routes } from '@/data/sidebar'
+import useBooleanStore from '@/store/toggle'
 import { MenuIcon } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
 const Sidebar = () => {
+    const { value, setValue } = useBooleanStore();
     return (
-        <div className='h-screen  bg-[#1A2421]/30'>
+        <div className={`${value ? ' block lg:hidden' : 'hidden lg:block'} h-screen w-[250px]  bg-[#101011]`}>
             <div className='flex flex-col p-2 h-full w-full'>
 
                 <div className='flex justify-between px-4  mt-2 h-fit w-full'>
-                    <div className='flex justify-center items-center'>
-                        <Image src='/logo.svg' alt='logo' width={100} height={100} className='h-10 w-10'/>
-                    </div>
-                    <div className='flex justify-center items-center'>
+                    <Link href='/' className='flex justify-center items-center cursor-pointer'>
+                        <Image src='/logo.svg' alt='logo' width={100} height={100} className='h-10 w-10' />
+                    </Link>
+                    <div className='flex cursor-pointer justify-center items-center text-white' onClick={() => setValue(!value)}>
                         <MenuIcon />
                     </div>
                 </div>
