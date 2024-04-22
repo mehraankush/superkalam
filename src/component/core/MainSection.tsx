@@ -13,13 +13,18 @@ const MainSection = () => {
             <div className='flex justify-between gap-5 p-2 pt-5 items-center'>
 
                 <div className='flex gap-2'>
-                    {
-                        value && (
-                            <div className='cursor-pointer' onClick={() => setValue(!value)}>
-                                <Menu />
-                            </div>
-                        )
-                    }
+                    <div className='hidden md:block'>
+                        {
+                            value && (
+                                <div className='cursor-pointer' onClick={() => setValue(!value)}>
+                                    <Menu />
+                                </div>
+                            )
+                        }
+                    </div>
+                    <div className='block md:hidden cursor-pointer' onClick={() => setValue(!value)}>
+                        <Menu />
+                    </div>
 
                     <div className='flex'>
                         <ChevronLeft />

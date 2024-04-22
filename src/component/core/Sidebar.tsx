@@ -1,5 +1,4 @@
 "use client"
-// import { routes } from '@/data/sidebar'
 import { routes } from '@/data/sidebar'
 import useBooleanStore from '@/store/toggle'
 import { MenuIcon } from 'lucide-react'
@@ -9,8 +8,9 @@ import React from 'react'
 
 const Sidebar = () => {
     const { value, setValue } = useBooleanStore();
+    console.log(value,"value")
     return (
-        <div className={`${value ? ' block lg:hidden' : 'hidden lg:block'} h-screen w-[250px]  bg-[#101011]`}>
+        <div className={`${value ? 'z-[9] absolute md:hidden' : 'hidden lg:block'} h-screen w-[250px]  bg-[#101011]`}>
             <div className='flex flex-col p-2 h-full w-full'>
 
                 <div className='flex justify-between px-4  mt-2 h-fit w-full'>
