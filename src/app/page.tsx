@@ -1,7 +1,7 @@
-import MainSection from "@/component/core/MainSection";
-import MucisPlayer from "@/component/core/MucisPlayer";
-import RightSIdebar from "@/component/core/RightSIdebar";
-import Sidebar from "@/component/core/Sidebar";
+import MainSection from "@/components/core/MainSection";
+import MucisPlayer from "@/components/core/MucisPlayer";
+import RightSIdebar from "@/components/core/RightSIdebar";
+import Sidebar from "@/components/core/Sidebar";
 
 export default function Home() {
   return (
